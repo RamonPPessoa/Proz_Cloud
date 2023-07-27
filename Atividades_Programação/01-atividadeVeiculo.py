@@ -10,7 +10,7 @@ def categoria_habilitacao(rodas, peso_bruto, qtd_pessoas):  # Definindo e criand
     elif rodas >= 4 and peso_bruto > 6000:
         return "Categoria E"
     else:
-        return "Veículo não identificado"
+        return "Veículo não identificado."
 
 rodas = int(input("Digite a quantidade de rodas do veículo: "))  # Criando os inputs
 peso_bruto = float(input("Digite o peso bruto do veículo em quilogramas: "))
