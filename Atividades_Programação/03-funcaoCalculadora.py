@@ -6,25 +6,25 @@
 
 #Caso seja inserido um número de operação que não exista, o resultado deverá ser 0.
 
-def calculadora(num1, num2, operacao):
+def calculadora(numero1, numero2, operacao):
     if operacao == 1:
-        return num1 + num2
+        return numero1 + numero2
     elif operacao == 2:
-        return num1 - num2
+        return numero1 - numero2
     elif operacao == 3:
-        return num1 * num2
+        return numero1 * numero2
     elif operacao == 4:
-        if num2 == 0:
-            return "Erro: divisão por zero"
+        if numero2 == 0:
+            return "Erro: nao pode ser realizada divisão por zero"
         else:
-            return num1 / num2
+            return numero1 / numero2
     else:
         return 0
 
-num1 = float(input("Digite o primeiro número: "))
-num2 = float(input("Digite o segundo número: "))
+numero1 = float(input("Digite o primeiro número: "))
+numero2 = float(input("Digite o segundo número: "))
 operacao = int(input("Digite a operação desejada (1 - Soma, 2 - Subtração, 3 - Multiplicação, 4 - Divisão): "))
 
-resultado = calculadora(num1, num2, operacao)
+resultado = calculadora(numero1, numero2, operacao)
 
 print(f"O resultado da operação é: {resultado}")
